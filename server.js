@@ -14,8 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
-
-
 app.post('/exam', (req, res) => {
   const { toughness, hour, consist, syllabus, time } = req.body;
   
